@@ -2,6 +2,8 @@ body {
     font-family: sans-serif;
     background-color: lightgrey;
     margin-top: 25px;
+    color: #b9b9b9;
+    background-image: url(http://eskipaper.com/images/manchester-united-wallpaper-4.jpg);
 }
 
 .center {
@@ -20,3 +22,9 @@ body {
     height: 450px;
 }
 
+h1 {
+    text-decoration: underline;
+}
+a   {
+    color:black;
+}
