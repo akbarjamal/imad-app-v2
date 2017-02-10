@@ -11,7 +11,7 @@ app.get('/', function (req, res) {
 
 app.get('/06-07', function (req, res) {
   //res.sendFile(path.join(__dirname, 'ui', '06-07.html'));
-  res.send('Season 06-07 will be displayed here...')
+  res.send('Season 06-07 will be displayed here...');
 });
 
 app.get('/07-08', function (req, res) {
