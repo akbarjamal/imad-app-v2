@@ -9,4 +9,5 @@ function moveRight()
 var onClick=function()
 {
     var interval = setInterval(moveRight,50);
-}
+};
+console.log('Executed!!');
