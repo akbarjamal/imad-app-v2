@@ -74,11 +74,6 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-var year = '/';
-var title = '';
-var link = '';
-var content = '';
-var video = '';
 app.get('/:year', function (req, res) {
   var year = req.params.year;
   res.send(createTemplate(season[year]));
