@@ -1,12 +1,8 @@
 console.log('Loaded!');
 var img=document.getElementById('crest');
-var margin=0;
-function moveRight()
-{
-    margin+=1;
-    img.style.marginLeft = margin + 'px';
-}
+var marginLeft=0;
 var onClick = function()
 {
-    var interval = setInterval(moveRight,50);
+    marginLeft+=10;
+    img.style.marginLeft;
 }
