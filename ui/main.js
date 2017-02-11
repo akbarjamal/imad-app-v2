@@ -1,5 +1,5 @@
 console.log('Loaded!');
-var img=document.getElementById('crest');
+var img=document.getElementById('team');
 var marginLeft=0;
 function moveRight()
 {
