@@ -80,6 +80,7 @@ var link = '';
 var content = '';
 var video = '';
 app.get('/:year', function (req, res) {
+  var year = req.params.year;
   res.send(createTemplate(season[year]));
 });
 
