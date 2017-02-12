@@ -5,13 +5,6 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var names=[];
-app.get('/submit-name', function (req,res) {
-    var name = req.query.name;
-    names.push(name);
-    res.send(JSON.stringify(names));
-});
-
 var season = {
 	'06-07': {
 		title:'Season 06-07 Review:',
@@ -86,6 +79,13 @@ var counter = 0;
 app.get('/yes', function (req, res) {
   counter = counter + 1;
   res.send(counter.toString()) ;
+});
+
+var names=[];
+app.get('/submit-name', function (req,res) {
+    var name = req.query.name;
+    names.push(name);
+    res.send(JSON.stringify(names));
 });
 
 app.get('/:year', function (req, res) {
