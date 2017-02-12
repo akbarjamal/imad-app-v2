@@ -6,10 +6,10 @@ button.onclick = function() {
         if(request.readyState === XMLHttpRequest.DONE) {
             if(request.status === 200) {
                 var counter = request.responseText;
-                console.log(request.responseText);
-                console.log(request.response);
-                var span = document.getElementById('value');
-                span.innerHTML = counter.toString();
+                //console.log(request.responseText);
+                //console.log(request.response);
+                var div = document.getElementById('count');
+                div.innerHTML = counter.toString();
             }
         }
     };
