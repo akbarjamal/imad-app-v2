@@ -10,7 +10,7 @@ button.onclick = function() {
                 span.innerHTML = counter.toString();
             }
         }
-    }
+    };
     request.open('GET','http://akbarjamal.imad.hasura-app.io/yes',true);
     request.send(null);
 };
