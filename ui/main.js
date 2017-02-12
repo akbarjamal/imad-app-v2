@@ -7,7 +7,7 @@ button.onclick = function() {
             if(request.status === 200) {
                 var counter = response.Text;
                 var span = document.getElementById('count');
-                span.innerHTML = count.toString();
+                span.innerHTML = counter.toString();
             }
         }
     };
