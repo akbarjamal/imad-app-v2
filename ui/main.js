@@ -8,8 +8,8 @@ button.onclick = function() {
             if(request.status === 200) {
                 var counter = request.responseText;
                 console.log(counter);
-                var span = document.getElementById('count-no');
-                span.innerHTML = counter.toString();
+                var no = document.getElementById('count-no');
+                no.innerHTML = counter.toString();
             }
         }
     };
