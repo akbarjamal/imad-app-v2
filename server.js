@@ -74,17 +74,23 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-var year = '/';
-var title = '';
-var link = '';
-var content = '';
-var video = '';
+var counter = 0;
+app.get('/yes', function (req, res) {
+  counter = counter + 1;
+  res.send(counter.toString()) ;
+});
+
 app.get('/:year', function (req, res) {
+  var year = req.params.year;
   res.send(createTemplate(season[year]));
 });
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
+});
+
+app.get('/ui/main.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
 
 app.get('/ui/review.css', function (req, res) {
