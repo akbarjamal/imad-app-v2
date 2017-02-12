@@ -5,9 +5,10 @@ button.onclick = function() {
     request.onreadystagechange = function () {
         if(request.readyState === XMLHttpRequest.DONE) {
             if(request.status === 200) {
-                var counter = response.Text;
+                var number = response.Text;
                 var span = document.getElementById('count');
-                span.innerHTML = counter.toString();
+                alert(number);
+                span.innerHTML = number.toString();
             }
         }
     };
