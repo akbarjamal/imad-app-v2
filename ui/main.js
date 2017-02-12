@@ -5,9 +5,9 @@ button.onclick = function() {
     request.onreadystagechange = function () {
         if(request.readyState === XMLHttpRequest.DONE) {
             if(request.status === 200) {
-                var number = request.responseText;
+                var counter = request.responseText;
                 var span = document.getElementById('value');
-                span.innerHTML = number.toString();
+                span.innerHTML = counter.toString();
             }
         }
     };
