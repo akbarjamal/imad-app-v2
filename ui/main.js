@@ -5,9 +5,8 @@ button.onclick = function() {
     request.onreadystagechange = function () {
         if(request.readyState === XMLHttpRequest.DONE) {
             if(request.status === 200) {
-                var number = response.Text;
+                var number = request.responseText;
                 var span = document.getElementById('count');
-                alert(number);
                 span.innerHTML = number.toString();
             }
         }
