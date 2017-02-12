@@ -2,14 +2,14 @@ console.log('Loaded!');
 var button = document.getElementById('fan');
 button.onclick = function() {
     var request = new XMLHttpRequest();
-    request.responseType = 'text';
     request.onreadystagechange = function () {
         if(request.readyState === XMLHttpRequest.DONE) {
             if(request.status === 200) {
                 var counter = request.responseText;
-                console.log(counter);
+                console.log(request.responseText);
+                console.log(request.response);
                 var span = document.getElementById('value');
-                span.innerHTML = counter;
+                span.innerHTML = counter.toString();
             }
         }
     };
