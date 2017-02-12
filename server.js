@@ -90,6 +90,10 @@ app.get('/ui/bio.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'bio.html'));
 });
 
+app.get('/ui/feedback.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'feedback.html'));
+});
+
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
