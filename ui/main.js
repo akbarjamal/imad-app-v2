@@ -1,5 +1,6 @@
 console.log('Loaded!');
 var button = document.getElementById('fan');
+var counter = 0;
 button.onclick = function() {
     var request = new XMLHttpRequest();
     request.onreadystagechange = function () {
