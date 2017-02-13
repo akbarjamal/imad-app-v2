@@ -21,7 +21,7 @@ button.onclick = function() {
     span.innerHTML = counter.toString();
 };*/
 
-
+var names = '';
 var submit = document.getElementById('submit_btn');
 submit.onclick = function() {
     var request = new XMLHttpRequest();
