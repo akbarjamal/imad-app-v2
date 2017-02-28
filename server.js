@@ -119,7 +119,7 @@ app.get('/season/:year', function (req, res) {
           if(result.rows.length === 0) {
               res.status(404).send('Data not available');
           } else {
-              var Data = result.rows[0];
+              var Data = result.rows[1];
               res.send(createTemplate(Data));
           }
       }
