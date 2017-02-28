@@ -111,7 +111,7 @@ app.get('/submit-name', function (req,res) {
 });
 
 app.get('/season/:year', function (req, res) {
-  pool.query("SELECT * FROM season WHERE season = '" + req.params.year + "'",function (err, result) {
+  pool.query("SELECT * FROM season WHERE title = '" + req.params.year + "'",function (err, result) {
       if(err) {
           res.status(500).send(err.toString());
       } else {
