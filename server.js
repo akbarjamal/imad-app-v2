@@ -110,9 +110,8 @@ app.get('/submit-name', function (req,res) {
     res.send(JSON.stringify(names));
 });
 
-/*app.get('/season/:year', function (req, res) {
-  var year = req.params.year;
-  pool.query("SELECT * FROM season WHERE season = '" + year + "'", function (err, result) {
+app.get('/season/:year', function (req, res) {
+  pool.query("SELECT * FROM season WHERE season = '" + req.params.year + "'",function (err, result) {
       if(err) {
           res.status(500).send(err.toString());
       } else {
@@ -124,7 +123,7 @@ app.get('/submit-name', function (req,res) {
           }
       }
   });
-});*/
+});
 
 app.get('/:year', function (req, res) {
   var year = req.params.year;
