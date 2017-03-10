@@ -1,5 +1,5 @@
 console.log('Loaded!');
-var button = document.getElementById('fan');
+/*var button = document.getElementById('fan');
 button.onclick = function() {
     var request = new XMLHttpRequest();
     request.onreadystatechange = function() {
@@ -14,7 +14,7 @@ button.onclick = function() {
     request.open('GET', 'http://akbarjamal.imad.hasura-app.io/yes', true);
     request.send(null);
 };
-/*var counter = 0;
+var counter = 0;
 button.onclick = function() {
     counter = counter + 1;
     var span = document.getElementById('count');
