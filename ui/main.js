@@ -22,7 +22,7 @@ button.onclick = function() {
 };*/
 
 
-var submit = document.getElementById('submit_btn');
+/*var submit = document.getElementById('submit_btn');
 submit.onclick = function() {
     var request = new XMLHttpRequest();
     request.onreadystatechange = function() {
@@ -43,10 +43,10 @@ submit.onclick = function() {
     var name = nameInput.value;
     request.open('GET', 'http://akbarjamal.imad.hasura-app.io/submit-name?name=' + name, true);
     request.send(null);
-};
+};*/
 
-var sub = document.getElementById('submit_button');
-sub.onclick = function() {
+var submit = document.getElementById('submit_btn');
+submit.onclick = function() {
     var request = new XMLHttpRequest();
     request.onreadystatechange = function() {
         if (request.readyState === XMLHttpRequest.DONE) {
