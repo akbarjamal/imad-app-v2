@@ -184,6 +184,10 @@ app.get('/:year', function (req, res) {
   res.send(createTemplate(season[year]));
 });
 
+app.get('/ui/login.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'login.html'));
+});
+
 app.get('/ui/bio.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'bio.html'));
 });
