@@ -1,5 +1,5 @@
 console.log('Loaded!');
-/*var button = document.getElementById('fan');
+var button = document.getElementById('fan');
 button.onclick = function() {
     var request = new XMLHttpRequest();
     request.onreadystatechange = function() {
@@ -19,10 +19,10 @@ button.onclick = function() {
     counter = counter + 1;
     var span = document.getElementById('count');
     span.innerHTML = counter.toString();
-};*/
+};
 
 
-/*var submit = document.getElementById('submit_btn');
+var submit = document.getElementById('submit_btn');
 submit.onclick = function() {
     var request = new XMLHttpRequest();
     request.onreadystatechange = function() {
@@ -43,7 +43,7 @@ submit.onclick = function() {
     var name = nameInput.value;
     request.open('GET', 'http://akbarjamal.imad.hasura-app.io/submit-name?name=' + name, true);
     request.send(null);
-};*/
+};
 
 var submit = document.getElementById('submit_btn');
 submit.onclick = function() {
