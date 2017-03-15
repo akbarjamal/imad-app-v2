@@ -22,8 +22,8 @@ button.onclick = function() {
 };
 
 
-var submit = document.getElementById('submit_button');
-submit.onclick = function() {
+var sub = document.getElementById('sub_button');
+sub.onclick = function() {
     var request = new XMLHttpRequest();
     request.onreadystatechange = function() {
         if (request.readyState === XMLHttpRequest.DONE) {
