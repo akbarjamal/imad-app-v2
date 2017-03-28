@@ -14,12 +14,13 @@ button.onclick = function() {
     request.open('GET', 'http://akbarjamal.imad.hasura-app.io/yes', true);
     request.send(null);
 };
+
 var counter = 0;
-button.onclick = function() {
+/*button.onclick = function() {
     counter = counter + 1;
     var span = document.getElementById('count');
     span.innerHTML = counter.toString();
-};
+};*/
 
 
 var sub = document.getElementById('sub_button');
