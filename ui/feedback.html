@@ -1,4 +1,4 @@
-<html>
+<!doctype html>
     <head>
         <title>Feedback</title>
         <link rel="icon" href="/ui/crest.png" type="image/png" />
@@ -7,53 +7,17 @@
     <body>
         <a href='/'>Home</a>
         <h2 style="text-decoration:underline;">Comments:</h2>
-        <input type='text' id='name' placeholder='comment'></input>
-        <input type='submit' id='sub_button' value='Submit'></input>
+        <input type='text' id='name' placeholder='comment' />
+        <input type='submit' id='sub_button' value='Submit' />
         <ul id='namelist'>
         </ul>
         <br/>
         <div>
             <p>Are you a Fan?<button id='fan'>Yes</button> Fans count:<span id="count"> 0 </span></p>
         </div>
-        <!--<script>
-            var submit = document.getElementById('submit_btn');
-            submit.onclick = function() {
-                var request = new XMLHttpRequest();
-                request.onreadystatechange = function() {
-                    if (request.readyState === XMLHttpRequest.DONE) {
-                        if (request.status === 200) {
-                            var names=request.responseText;
-                            names=JSON.parse(names);
-                            var list = '';
-                            for (var i = 0;i<names.length;i++) {
-                                list+='<li>'+ names[i] +'</li>';
-                            }
-                            var ul = document.getElementById('namelist');
-                            ul.innerHTML = list;
-                        }
-                    }
-                };
-                var nameInput = document.getElementById('name');
-                var name = nameInput.value;
-                request.open('GET', 'http://akbarjamal.imad.hasura-app.io/submit-name?name=' + name, true);
+imad.hasura-app.io/submit-name?name=' + name, true);
                 request.send(null);
             };
-            var button = document.getElementById('fan');
-            button.onclick = function() {
-                var request = new XMLHttpRequest();
-                request.onreadystatechange = function() {
-                    if (request.readyState === XMLHttpRequest.DONE) {
-                        if (request.status === 200) {
-                            var counter = request.responseText;
-                            var span = document.getElementById('count');
-                            span.innerHTML = counter.toString();
-                        }
-                    }
-                };
-                request.open('GET', 'http://akbarjamal.imad.hasura-app.io/yes', true);
-                request.send(null);
-            };
-        </script>-->
         <script type="text/javascript" src="/ui/main.js">
         </script>
     </body>
